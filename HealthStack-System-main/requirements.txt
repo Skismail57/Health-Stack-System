@@ -1,0 +1,66 @@
+# Core Django
+Django==4.2.16
+django-environ==0.9.0
+python-decouple==3.6
+pytz==2021.3
+
+# Django Extensions
+django-debug-toolbar==3.6.0
+django-widget-tweaks==1.4.12
+
+# REST API
+djangorestframework==3.15.2
+djangorestframework-simplejwt==5.3.1
+drf-spectacular==0.27.0
+
+# Authentication & Security
+django-cors-headers==4.3.1
+django-ratelimit==4.1.0
+
+# Database
+psycopg2-binary==2.9.9
+
+# Caching & Task Queue
+redis==5.0.1
+django-redis==5.4.0
+celery==5.3.4
+flower==2.0.1
+
+# WebSocket Support
+channels==4.0.0
+channels-redis==4.1.0
+daphne==4.0.0
+
+# File Handling
+Pillow==10.3.0
+
+# PDF Generation
+reportlab==3.6.13
+xhtml2pdf==0.2.8
+
+# Web Server
+gunicorn==21.2.0
+whitenoise==6.2.0
+
+# Monitoring & Error Tracking
+sentry-sdk==2.14.0
+
+# Payment Gateway
+sslcommerz-lib==1.0
+
+# Utilities
+certifi==2024.7.4
+charset-normalizer==2.0.11
+idna==3.7
+python-dateutil==2.8.2
+requests==2.31.0
+six==1.16.0
+urllib3==1.26.18
+virtualenv==20.14.1
+widgetsnbextension==3.5.2
+
+# PWA (Progressive Web App) Support
+django-pwa==1.1.0
+
+# QR Code generation for mobile access
+qrcode[pil]==7.4.2
