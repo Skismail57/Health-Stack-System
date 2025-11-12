@@ -136,58 +136,115 @@ SSLCOMMERZ_IS_SANDBOX=True
 
 ## Screenshots
 
+<<!-- screenshots:auto:start -->
+
 <!-- screenshots:auto:start -->
 
-### 2025-11-08
+## 🖼️ Screenshots
 
-![Screenshot 2025 11 08 210827](static/screenshots/Screenshot 2025-11-08 210827.png)
-![Screenshot 2025 11 08 211034](static/screenshots/Screenshot 2025-11-08 211034.png)
-![Screenshot 2025 11 08 212651](static/screenshots/Screenshot 2025-11-08 212651.png)
-![Screenshot 2025 11 08 212746](static/screenshots/Screenshot 2025-11-08 212746.png)
-![Screenshot 2025 11 08 213139](static/screenshots/Screenshot 2025-11-08 213139.png)
-![Screenshot 2025 11 08 213332](static/screenshots/Screenshot 2025-11-08 213332.png)
-![Screenshot 2025 11 08 213408](static/screenshots/Screenshot 2025-11-08 213408.png)
-![Screenshot 2025 11 08 213540](static/screenshots/Screenshot 2025-11-08 213540.png)
-![Screenshot 2025 11 08 213609](static/screenshots/Screenshot 2025-11-08 213609.png)
-![Screenshot 2025 11 08 220106](static/screenshots/Screenshot 2025-11-08 220106.png)
-![Screenshot 2025 11 08 220151](static/screenshots/Screenshot 2025-11-08 220151.png)
-![Screenshot 2025 11 08 220358](static/screenshots/Screenshot 2025-11-08 220358.png)
-![Screenshot 2025 11 08 220524](static/screenshots/Screenshot 2025-11-08 220524.png)
-![Screenshot 2025 11 08 221140](static/screenshots/Screenshot 2025-11-08 221140.png)
-![Screenshot 2025 11 08 221516](static/screenshots/Screenshot 2025-11-08 221516.png)
-![Screenshot 2025 11 08 221904](static/screenshots/Screenshot 2025-11-08 221904.png)
-![Screenshot 2025 11 08 221921](static/screenshots/Screenshot 2025-11-08 221921.png)
-![Screenshot 2025 11 08 221936](static/screenshots/Screenshot 2025-11-08 221936.png)
-![Screenshot 2025 11 08 222013](static/screenshots/Screenshot 2025-11-08 222013.png)
-![Screenshot 2025 11 08 222113](static/screenshots/Screenshot 2025-11-08 222113.png)
-![Screenshot 2025 11 08 222142](static/screenshots/Screenshot 2025-11-08 222142.png)
-![Screenshot 2025 11 08 222255](static/screenshots/Screenshot 2025-11-08 222255.png)
-![Screenshot 2025 11 08 222639](static/screenshots/Screenshot 2025-11-08 222639.png)
+### 🔐 Authentication Pages  
+#### 👑 Admin Login Page  
+![Admin Login Page](static/screenshots/Admin%20Login%20Page.png)
 
-### 2025-11-07
+#### 👨‍⚕️ Doctor Login Page  
+![Doctor Login Page](static/screenshots/Doctor%20Login%20Page.png)
 
-![Screenshot 2025 11 07 090822](static/screenshots/Screenshot 2025-11-07 090822.png)
-![Screenshot 2025 11 07 090857](static/screenshots/Screenshot 2025-11-07 090857.png)
+#### 👩‍⚕️ Patient Login Page  
+![Patient Login Page](static/screenshots/Patient%20Login%20Page.png)
 
-### 2025-11-06
+---
 
-![Screenshot 2025 11 06 223537](static/screenshots/Screenshot 2025-11-06 223537.png)
-![Screenshot 2025 11 06 223925](static/screenshots/Screenshot 2025-11-06 223925.png)
-![Screenshot 2025 11 06 224022](static/screenshots/Screenshot 2025-11-06 224022.png)
-![Screenshot 2025 11 06 224119](static/screenshots/Screenshot 2025-11-06 224119.png)
-![Screenshot 2025 11 06 224151](static/screenshots/Screenshot 2025-11-06 224151.png)
-![Screenshot 2025 11 06 224301](static/screenshots/Screenshot 2025-11-06 224301.png)
-![Screenshot 2025 11 06 224628](static/screenshots/Screenshot 2025-11-06 224628.png)
-![Screenshot 2025 11 06 225021](static/screenshots/Screenshot 2025-11-06 225021.png)
-![Screenshot 2025 11 06 225154](static/screenshots/Screenshot 2025-11-06 225154.png)
-![Screenshot 2025 11 06 225215](static/screenshots/Screenshot 2025-11-06 225215.png)
-![Screenshot 2025 11 06 225245](static/screenshots/Screenshot 2025-11-06 225245.png)
-![Screenshot 2025 11 06 225328](static/screenshots/Screenshot 2025-11-06 225328.png)
-![Screenshot 2025 11 06 225936](static/screenshots/Screenshot 2025-11-06 225936.png)
-![Screenshot 2025 11 06 230204](static/screenshots/Screenshot 2025-11-06 230204.png)
+### 🏠 Core Pages  
+#### 🏠 Home Page  
+![Home Page](static/screenshots/Home%20Page.png)
 
+#### ℹ️ About Page  
+![About](static/screenshots/About.png)
+
+---
+
+### 🧑‍💼 Admin Panel  
+#### 🧾 Admin Dashboard  
+![Admin Dashboard](static/screenshots/Admin%20Dashboard.png)
+
+#### ➕ Add Clinical Technician  
+![Add Clinical Technician](static/screenshots/Add%20Clinical%20Technician.png)
+
+#### 🧑‍⚕️ Available Doctors  
+![Available Doctors](static/screenshots/Available%20Doctors.png)
+
+#### 🏥 Available Hospitals  
+![Available Hospitals](static/screenshots/Available%20Hospitals.png)
+
+#### 🧑‍🔬 Clinic & Specialist  
+![Clinic and Specialist](static/screenshots/Clinic%20And%20Specialist.png)
+
+#### 🚨 Emergency Hospitals  
+![Emergency Hospitals](static/screenshots/Emergency%20Hospitals.png)
+
+---
+
+### 👨‍⚕️ Doctor Module  
+#### 🩺 Doctor Dashboard  
+![Doctor Dashboard](static/screenshots/Doctor%20Dashboard.png)
+
+#### 📅 Django Add Appointment  
+![Django Add Appointment](static/screenshots/Django%20Add%20Appointment.png)
+
+#### 🧾 Django Add Report  
+![Django Add Report](static/screenshots/Django%20Add%20Report.png)
+
+#### 💊 Django Add Prescription  
+![Django Add Prescription](static/screenshots/Django%20Add%20Prescription.png)
+
+#### 🛒 Django Add Cart  
+![Django Add Cart](static/screenshots/Django%20Add%20Cart.png)
+
+---
+
+### 👩‍⚕️ Patient Module  
+#### 🧍‍♂️ Patient Dashboard  
+![Patient Dashboard](static/screenshots/Patient%20Dashboard.png)
+
+#### 🧾 Django Appointments  
+![Django Appointments](static/screenshots/Django%20Appointments.png)
+
+#### 💉 Medicines  
+![Medicines](static/screenshots/Medicines.png)
+
+#### 💊 Medicine Cart  
+![Medicine Cart](static/screenshots/Medicine%20Cart.png)
+
+#### 💳 Medicine Payment  
+![Medicine Payment](static/screenshots/Medicine%20Payment.png)
+
+---
+
+### ⚙️ Django Administration & Backend  
+#### 🏗️ Django Administration  
+![Django Administration](static/screenshots/Django%20Administration.png)
+
+#### ⚙️ Site Administration  
+![Site Administration](static/screenshots/Site%20Administration.png)
+
+#### 🧠 Django Doctor  
+![Django Doctor](static/screenshots/Django%20Doctor.png)
+
+#### 🏥 Django Hospital  
+![Django Hospital](static/screenshots/Django%20Hospital.png)
+
+#### 🩺 Django Add Report  
+![Django Add Report](static/screenshots/Django%20Add%20Report.png)
+
+---
+
+### 🌐 API Documentation  
+#### 🔗 HealthStack API  
+![HealthStack Api](static/screenshots/HealthStack%20Api.png)
 
 <!-- screenshots:auto:end -->
+
+
 
 Place PNG/JPG files in `static/screenshots/` using these suggested names:
 - `banner.png`, `homepage.png`, `patient-dashboard.png`
