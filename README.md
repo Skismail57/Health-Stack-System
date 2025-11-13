@@ -78,7 +78,8 @@ HealthStack is a comprehensive, modular Django-powered healthcare platform that 
 - PDF generation for reports/prescriptions (xhtml2pdf)
 
 ### 📂 Project Structure
-![Project Structure](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Project%20Strcuture.jpg)
+[View Project Structure text file](https://raw.githubusercontent.com/Skismail57/Health‑Stack‑System/main/HealthStack‑System‑main/static/Screenshots/Project%20Structure.txt)
+
 
 
 
