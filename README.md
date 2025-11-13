@@ -120,50 +120,50 @@ Prerequisites
 - Virtualenv (recommended)
   
 Windows Installation (PowerShell)
- Clone the repository
+ # Clone the repository
 git clone <repository-url>
 cd HealthStack-System
 
-Create virtual environment
+# Create virtual environment
 python -m venv venv
 
-Activate virtual environment
+# Activate virtual environment
 .\venv\Scripts\activate
 
-Install dependencies
+# Install dependencies
 pip install -r requirements.txt
 
- Environment setup
+# Environment setup
 Copy-Item .env.example .env
 Edit .env with your configuration
-
-- Database setup
+ 
+# Database setup
 python manage.py migrate
 
-- Create superuser
+# Create superuser
 python manage.py createsuperuser
 
-- Collect static files
+# Collect static files
 python manage.py collectstatic --noinput
 
-- Run development server
+# Run development server
 python manage.py runserver 127.0.0.1:8000
 
-- macOS/Linux (bash)
-- Clone the repository
+# macOS/Linux (bash)
+## Clone the repository
 git clone <repository-url>
 cd HealthStack-System
 
-- Create virtual environment
+# Create virtual environment
 python3 -m venv venv
 
-- Activate virtual environment
+# Activate virtual environment
 source venv/bin/activate
 
-- Install dependencies
+# Install dependencies
 pip install -r requirements.txt
 
-- Environment setup
+# Environment setup
 cp .env.example .env
 # Edit .env with your configuration
 
