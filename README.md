@@ -137,48 +137,68 @@ SSLCOMMERZ_IS_SANDBOX=True
 ## Screenshots
 
 <<!-- screenshots:auto:start -->
-## 📸 Project Screenshots
 
-### 🏠 Home & About
-![Home Page](static/Screenshots/Home%20Page.png)
-![About Page](static/Screenshots/About.png)
+## 📸 Screenshots
 
-### 👩‍⚕️ Doctor Module
-![Doctor Dashboard](static/Screenshots/Doctor%20Dashboard.png)
-![Doctor Login Page](static/Screenshots/Doctor%20Login%20Page.png)
-![Django Doctor](static/Screenshots/Django%20Doctor.png)
+Below are some key interface views of the **HealthStack – Hospital Management System**:
 
-### 🧑‍⚕️ Patient Module
-![Patient Dashboard](static/Screenshots/Patient%20Dashboard.png)
-![Patient Login Page](static/Screenshots/Patient%20Login%20Page.png)
-![Django Appointments](static/Screenshots/Django%20Appointments.png)
-![Django Add Appointment](static/Screenshots/Django%20Add%20Appointment.png)
+---
 
-### 🏥 Hospital Management
-![Available Hospitals](static/Screenshots/Available%20Hospitals.png)
-![Available Doctors](static/Screenshots/Available%20Doctors.png)
-![Clinic And Specialist](static/Screenshots/Clinic%20And%20Specialist.png)
-![Emergency Hospitals](static/Screenshots/Emergency%20Hospitals.png)
-![Django Hospital](static/Screenshots/Django%20Hospital.png)
+### 🧑‍⚕️ About & Home Pages
+![About](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/About.png)
+![Home Page](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Home%20Page.png)
 
-### 💊 Pharmacy & Medicines
-![Medicines](static/Screenshots/Medicines.png)
-![Medicine Cart](static/Screenshots/Medicine%20Cart.png)
-![Medicine Payment](static/Screenshots/Medicine%20Payment.png)
-![Django Add Cart](static/Screenshots/Django%20Add%20Cart.png)
-![Django Add Prescription](static/Screenshots/Django%20Add%20Prescription.png)
-![Django Add Report](static/Screenshots/Django%20Add%20Report.png)
+---
 
-### 👨‍💼 Admin Panel
-![Admin Dashboard](static/Screenshots/Admin%20Dashboard.png)
-![Admin Login Page](static/Screenshots/Admin%20Login%20Page.png)
-![Django Administration](static/Screenshots/Django%20Administration.png)
-![Site Administration](static/Screenshots/Site%20Administration.png)
-![Add Clinical Technician](static/Screenshots/Add%20Clinical%20Technician.png)
+### 🔐 Authentication Pages
+![Admin Login Page](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Admin%20Login%20Page.png)
+![Doctor Login Page](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Doctor%20Login%20Page.png)
+![Patient Login Page](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Patient%20Login%20Page.png)
 
-### ⚙️ APIs & Backend
-![HealthStack Api](static/Screenshots/HealthStack%20Api.png)
-![HealthStack_Api](static/Screenshots/HealthStack_Api.png)
+---
+
+### 🧭 Dashboards
+![Admin Dashboard](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Admin%20Dashboard.png)
+![Doctor Dashboard](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Doctor%20Dashboard.png)
+![Patient Dashboard](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Patient%20Dashboard.png)
+
+---
+
+### 🏥 Hospital & Clinical Management
+![Available Hospitals](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Available%20Hospitals.png)
+![Available Doctors](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Available%20Doctors.png)
+![Clinic And Specialist](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Clinic%20And%20Specialist.png)
+![Add Clinical Technician](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Add%20Clinical%20Technician.png)
+
+---
+
+### 💊 Pharmacy & Billing
+![Medicines](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Medicines.png)
+![Medicine Cart](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Medicine%20Cart.png)
+![Medicine Payment](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Medicine%20Payment.png)
+
+---
+
+### 📄 Django Admin Views
+![Django Administration](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Django%20Administration.png)
+![Django Appointments](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Django%20Appointments.png)
+![Django Add Appointment](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Django%20Add%20Appointment.png)
+![Django Add Prescription](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Django%20Add%20Prescription.png)
+![Django Add Report](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Django%20Add%20Report.png)
+![Django Add Cart](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Django%20Add%20Cart.png)
+![Django Doctor](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Django%20Doctor.png)
+![Django Hospital](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Django%20Hospital.png)
+
+---
+
+### ⚙️ API and Miscellaneous
+![HealthStack Api](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/HealthStack%20Api.png)
+![HealthStack_Api](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/HealthStack_Api.png)
+![Site Administration](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Site%20Administration.png)
+![Emergency Hospitals](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Emergency%20Hospitals.png)
+
+
+
 
 <!-- screenshots:auto:end -->
 
