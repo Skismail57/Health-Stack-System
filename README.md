@@ -78,8 +78,18 @@ HealthStack is a comprehensive, modular Django-powered healthcare platform that 
 - PDF generation for reports/prescriptions (xhtml2pdf)
 
 ### 📂 Project Structure
-[View Project Structure text file](https://raw.githubusercontent.com/Skismail57/Health‑Stack‑System/main/HealthStack‑System‑main/static/Screenshots/Project%20Structure.txt)
-
+HealthStack-System/
+├── 📂 hospital/                    # Hospital management app
+│   ├── models.py                  # Hospital, Department, Appointment models
+│   ├── views.py                   # Hospital views and dashboards
+│   ├── urls.py                    # Hospital routing
+│   └── templates/hospital/        # Hospital templates
+│
+├── 📂 doctor/                     # Doctor portal app
+│   ├── models.py                  # Doctor, Schedule, Prescription models
+│   ├── views.py                   # Doctor authentication and dashboards
+│   ├── urls.py                    # Doctor routing
+│   └── templates/doctor/          # Doctor templates
 
 
 
