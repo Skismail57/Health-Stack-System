@@ -119,7 +119,7 @@ Prerequisites
 - pip (Python package manager)
 - Virtualenv (recommended)
   
-Windows Installation (PowerShell)
+## Windows Installation (PowerShell)
 ### Clone the repository
 git clone <repository-url>
 cd HealthStack-System
@@ -232,7 +232,7 @@ INSTALLED_APPS = [
     'sslcommerz',
 ]
 
-# REST Framework configuration
+### REST Framework configuration
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
@@ -429,22 +429,22 @@ Common Issues
 Static files not loading:
 python manage.py collectstatic --noinput
 
-Database migration errors:
+### Database migration errors:
 python manage.py makemigrations
 python manage.py migrate
 
-Port already in use:
+### Port already in use:
 python manage.py runserver 127.0.0.1:8001
 
 - If assets (CSS/images/fonts) do not load, verify `STATIC_URL` and paths under `static/` and run `collectstatic`.
 - If you previously used ngrok and see font errors from `assets.ngrok.com`, add `?ngrok-skip-browser-warning=true` to the URL or send header `ngrok-skip-browser-warning: true` to bypass the interstitial. In localhost‑only mode, avoid ngrok entirely.
 - If login fails, ensure `createsuperuser` was completed and DB migrations ran.
   
-## Module import errors:
+### Module import errors:
 - Verify virtual environment is activated
 - Check all requirements are installed: pip install -r requirements.txt
   
-## Testing
+### Testing
   ### Run all tests
 python manage.py test
 
