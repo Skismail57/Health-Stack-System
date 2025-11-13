@@ -107,7 +107,7 @@ Backend
 - JavaScript: Vanilla JS for dynamic features
 - Real-time: WebSockets via Django Channels
   
-Additional Packages
+### Additional Packages
 - API Docs: drf-spectacular (OpenAPI 3.0)
 - PDF Generation: xhtml2pdf
 - Payments: SSLCommerz SDK
@@ -120,63 +120,63 @@ Prerequisites
 - Virtualenv (recommended)
   
 Windows Installation (PowerShell)
- # Clone the repository
+### Clone the repository
 git clone <repository-url>
 cd HealthStack-System
 
-# Create virtual environment
+### Create virtual environment
 python -m venv venv
 
-# Activate virtual environment
+### Activate virtual environment
 .\venv\Scripts\activate
 
-# Install dependencies
+### Install dependencies
 pip install -r requirements.txt
 
-# Environment setup
+### Environment setup
 Copy-Item .env.example .env
 Edit .env with your configuration
  
-# Database setup
+### Database setup
 python manage.py migrate
 
-# Create superuser
+### Create superuser
 python manage.py createsuperuser
 
-# Collect static files
+### Collect static files
 python manage.py collectstatic --noinput
 
-# Run development server
+### Run development server
 python manage.py runserver 127.0.0.1:8000
 
-# macOS/Linux (bash)
-## Clone the repository
+### macOS/Linux (bash)
+### Clone the repository
 git clone <repository-url>
 cd HealthStack-System
 
-# Create virtual environment
+### Create virtual environment
 python3 -m venv venv
 
-# Activate virtual environment
+### Activate virtual environment
 source venv/bin/activate
 
-# Install dependencies
+### Install dependencies
 pip install -r requirements.txt
 
-# Environment setup
+### Environment setup
 cp .env.example .env
-# Edit .env with your configuration
+Edit .env with your configuration
 
-# Database setup
+### Database setup
 python manage.py migrate
 
-# Create superuser
+### Create superuser
 python manage.py createsuperuser
 
-# Collect static files
+### Collect static files
 python manage.py collectstatic --noinput
 
-# Run development server
+### Run development server
 python manage.py runserver 127.0.0.1:8000
 
 ⚙️ Configuration
@@ -187,18 +187,18 @@ SECRET_KEY=your-secret-key-here
 DEBUG=True
 ALLOWED_HOSTS=localhost,127.0.0.1
 
-# Database (Optional - SQLite used by default)
+### Database (Optional - SQLite used by default)
 DATABASE_URL=postgresql://username:password@localhost:5432/healthstack
 
-# Cache (Optional)
+### Cache (Optional)
 REDIS_URL=redis://localhost:6379/0
 
-# SSLCommerz Payments
+### SSLCommerz Payments
 SSLCOMMERZ_STORE_ID=your-store-id
 SSLCOMMERZ_STORE_PASSWORD=your-store-password
 SSLCOMMERZ_IS_SANDBOX=True
 
-# Email (Optional)
+### Email (Optional)
 EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
 EMAIL_HOST=smtp.gmail.com
 EMAIL_PORT=587
@@ -206,8 +206,8 @@ EMAIL_USE_TLS=True
 EMAIL_HOST_USER=your-email@gmail.com
 EMAIL_HOST_PASSWORD=your-app-password
 
-Required Django Settings
-# settings.py key configurations
+## Required Django Settings
+### settings.py key configurations
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -240,7 +240,7 @@ REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
-# Channels configuration for WebSockets
+### Channels configuration for WebSockets
 ASGI_APPLICATION = 'HealthStack.asgi.application'
    
 📱 Usage
@@ -250,17 +250,17 @@ Access Points
 - API Documentation: http://127.0.0.1:8000/api-docs/
   
 
-# Channels configuration for WebSockets
+### Channels configuration for WebSockets
 ASGI_APPLICATION = 'HealthStack.asgi.application'
 
-## Usage (Localhost Only)
+### Usage (Localhost Only)
 - Start server: `python manage.py runserver 127.0.0.1:8000`
 - Access web: `http://127.0.0.1:8000/`
 - Admin: `http://127.0.0.1:8000/admin/`
 - Recommended `ALLOWED_HOSTS`: `['127.0.0.1', 'localhost']`
 - External/mobile access and tunnels (e.g., ngrok) are disabled in this mode.
 
-## Key Application Routes
+### Key Application Routes
 - Patient Routes
 - /login/ - Patient login
 - /register/ - Patient registration
@@ -404,7 +404,7 @@ Below are some key interface views of the **HealthStack – Hospital Management 
 - Monitoring: Set up logging and error tracking
 
 Sample Production Settings
-  # Production configurations
+  ### Production configurations
 DEBUG = False
 ALLOWED_HOSTS = ['yourdomain.com', 'www.yourdomain.com']
 
@@ -419,7 +419,7 @@ DATABASES = {
     }
 }
 
-# Security settings
+### Security settings
 SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
@@ -440,22 +440,21 @@ python manage.py runserver 127.0.0.1:8001
 - If you previously used ngrok and see font errors from `assets.ngrok.com`, add `?ngrok-skip-browser-warning=true` to the URL or send header `ngrok-skip-browser-warning: true` to bypass the interstitial. In localhost‑only mode, avoid ngrok entirely.
 - If login fails, ensure `createsuperuser` was completed and DB migrations ran.
   
-Module import errors:
-
+## Module import errors:
 - Verify virtual environment is activated
 - Check all requirements are installed: pip install -r requirements.txt
   
-  Testing
-  # Run all tests
+## Testing
+  ### Run all tests
 python manage.py test
 
-# Run specific app tests
+### Run specific app tests
 python manage.py test hospital
 python manage.py test doctor
 python manage.py test api
 
 
-## Future Plans
+### Future Plans
 - Enhanced AI diagnostics and doctor matching
 - More detailed hospital analytics dashboards
 - Telemedicine video consultations
@@ -471,7 +470,7 @@ python manage.py test api
 - Push to branch: git push origin feature/amazing-feature
 - Open a Pull Request
 
-  Development Guidelines
+### Development Guidelines
 - Follow PEP 8 coding standards
 - Write tests for new functionality
 - Update documentation for new features
@@ -487,12 +486,12 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Issue Tracking: GitHub Issues
 - Releases: GitHub Releases
 
-  🏆 Acknowledgments
+🏆 Acknowledgments
 - Django community for excellent documentation
 - Contributors and testers
 - Healthcare professionals who provided domain expertise
 
-  <div align="center">
+<div align="center">
 HealthStack - Transforming Healthcare Management
 For support, email: shaikhmismail66@gmail.com | Documentation
 </div>
