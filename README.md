@@ -21,6 +21,7 @@ https://img.shields.io/badge/Redis-Optional-red.svg
 - License
 
 🎯 Overview
+
 HealthStack is a comprehensive, modular Django-powered healthcare platform that unifies patients, doctors, hospitals, and pharmacies into a seamless digital ecosystem. The system provides end-to-end healthcare management with real-time communication, AI-powered symptom checking, and secure payment processing.
 
 🏗️ Architecture
