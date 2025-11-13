@@ -1,0 +1,500 @@
+# 🏥 HealthStack — Comprehensive Healthcare Management System
+
+![Django](https://img.shields.io/badge/Django-4.2.16-green.svg)
+![DRF](https://img.shields.io/badge/Django%20REST%20Framework-3.14-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.8%2B-yellow.svg)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Supported-blue.svg)
+![Redis](https://img.shields.io/badge/Redis-Optional-red.svg)
+
+## 📋 Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [API Documentation](#api-documentation)
+- [Screenshots](#screenshots)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
+
+## 🎯 Overview
+
+HealthStack is a comprehensive, modular Django-powered healthcare platform that unifies patients, doctors, hospitals, and pharmacies into a seamless digital ecosystem. The system provides end-to-end healthcare management with real-time communication, AI-powered symptom checking, and secure payment processing.
+
+### 🏗️ Architecture
+- **Modular Design**: Separate apps for each functional domain
+- **RESTful APIs**: JWT-secured endpoints with auto-generated documentation
+- **Real-time Features**: WebSocket-based chat system
+- **Production Ready**: Configurable for SQLite (dev) or PostgreSQL (production)
+
+## ✨ Features
+
+### 👥 Patient Portal
+- **User Management**: Registration, login, and profile management
+- **Smart Search**: Find doctors by specialization, location, and ratings
+- **Appointment System**: Real-time availability checking and booking
+- **Medical Records**: Digital prescriptions and health history
+- **E-Pharmacy**: Medicine orders with prescription upload
+- **Communication**: Real-time chat with healthcare providers
+- **Payment Tracking**: History and notification system
+
+### 🩺 Doctor Portal
+- **Professional Profile**: Complete profile management with credentials
+- **Schedule Management**: Availability and appointment scheduling
+- **Clinical Tools**: Digital prescriptions and medical reports
+- **Patient Management**: History tracking and timeline views
+- **Analytics**: Earnings overview and performance insights
+
+### 🏥 Hospital Admin
+- **Hospital Profile**: Department, facility, and service management
+- **Monitoring**: Real-time appointment tracking and patient analytics
+- **Staff Management**: Doctor approval and performance monitoring
+- **Financial Reporting**: Revenue tracking and system configuration
+
+### 💊 Pharmacy Module
+- **Product Catalog**: Medicine inventory with search and filtering
+- **Shopping Cart**: Add to cart and prescription verification
+- **Order Management**: Complete checkout and order processing
+- **Analytics**: Sales reporting and supplier management
+
+### 🔧 Platform Features
+- **Real-time Chat**: Django Channels with WebSocket support
+- **AI Symptom Checker**: Intelligent doctor recommendations
+- **Secure Payments**: SSLCommerz integration (sandbox/production)
+- **REST APIs**: JWT authentication with access/refresh tokens
+- **Auto Documentation**: OpenAPI schema generation
+- **PDF Generation**: Reports and prescriptions (xhtml2pdf)
+
+## 📁 Project Structure
+
+```
+HealthStack-System/
+├── 📂 hospital/                    # Hospital management app
+│   ├── models.py                  # Hospital, Department, Appointment models
+│   ├── views.py                   # Hospital views and dashboards
+│   ├── urls.py                    # Hospital routing
+│   └── templates/hospital/        # Hospital templates
+│
+├── 📂 doctor/                     # Doctor portal app
+│   ├── models.py                  # Doctor, Schedule, Prescription models
+│   ├── views.py                   # Doctor authentication and dashboards
+│   ├── urls.py                    # Doctor routing
+│   └── templates/doctor/          # Doctor templates
+│
+├── 📂 pharmacy/                   # E-pharmacy app
+│   ├── models.py                  # Medicine, Cart, Order models
+│   ├── views.py                   # Shop, cart, checkout views
+│   ├── urls.py                    # Pharmacy routing
+│   └── templates/pharmacy/        # Pharmacy templates
+│
+├── 📂 ChatApp/                    # Real-time messaging
+│   ├── consumers.py               # WebSocket consumers
+│   ├── routing.py                 # WebSocket routing
+│   └── templates/ChatApp/         # Chat interfaces
+│
+├── 📂 ai/                         # AI services
+│   ├── views.py                   # Symptom checker views
+│   └── templates/ai/              # AI interface templates
+│
+├── 📂 api/                        # REST API layer
+│   ├── views.py                   # API view sets
+│   ├── serializers.py             # Data serializers
+│   ├── urls.py                    # API endpoints
+│   └── permissions.py             # Custom permissions
+│
+├── 📂 sslcommerz/                 # Payment integration
+│   ├── views.py                   # Payment processing
+│   └── templates/sslcommerz/      # Payment templates
+│
+├── 📂 static/                     # Static assets
+│   ├── css/                       # Stylesheets
+│   ├── js/                        # JavaScript files
+│   ├── images/                    # Images and icons
+│   └── screenshots/               # Application screenshots
+│
+├── 📂 templates/                  # Base templates
+│   ├── base.html                  # Main template
+│   ├── includes/                  # Template partials
+│   └── registration/              # Auth templates
+│
+├── 📂 media/                      # User uploaded files
+├── 📜 manage.py                   # Django management
+├── 📜 requirements.txt            # Python dependencies
+├── 📜 .env.example                # Environment template
+└── 📜 README.md                   # This file
+```
+
+## 🛠️ Tech Stack
+
+### Backend
+- **Framework**: Django 4.2.16
+- **API**: Django REST Framework 3.14+
+- **Authentication**: JWT (Simple JWT)
+- **Database**: SQLite (Development), PostgreSQL (Production)
+- **Async**: Django Channels 4.0+
+- **Cache**: Redis (Optional)
+- **Task Queue**: Celery (Optional)
+
+### Frontend
+- **Templating**: Django Templates
+- **Styling**: Custom CSS with responsive design
+- **JavaScript**: Vanilla JS for dynamic features
+- **Real-time**: WebSockets via Django Channels
+
+### Additional Packages
+- **API Docs**: drf-spectacular (OpenAPI 3.0)
+- **PDF Generation**: xhtml2pdf
+- **Payments**: SSLCommerz SDK
+- **Environment**: python-dotenv
+
+## 🚀 Installation
+
+### Prerequisites
+- Python 3.8 or higher
+- pip (Python package manager)
+- Virtualenv (recommended)
+
+### Windows Installation (PowerShell)
+```powershell
+# Clone the repository
+git clone <repository-url>
+cd HealthStack-System
+
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment
+.\venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Environment setup
+Copy-Item .env.example .env
+# Edit .env with your configuration
+
+# Database setup
+python manage.py migrate
+
+# Create superuser
+python manage.py createsuperuser
+
+# Collect static files
+python manage.py collectstatic --noinput
+
+# Run development server
+python manage.py runserver 127.0.0.1:8000
+```
+
+### macOS/Linux Installation (bash)
+```bash
+# Clone the repository
+git clone <repository-url>
+cd HealthStack-System
+
+# Create virtual environment
+python3 -m venv venv
+
+# Activate virtual environment
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Environment setup
+cp .env.example .env
+# Edit .env with your configuration
+
+# Database setup
+python manage.py migrate
+
+# Create superuser
+python manage.py createsuperuser
+
+# Collect static files
+python manage.py collectstatic --noinput
+
+# Run development server
+python manage.py runserver 127.0.0.1:8000
+```
+
+## ⚙️ Configuration
+
+### Environment Variables (.env)
+```ini
+# Django Settings
+SECRET_KEY=your-secret-key-here
+DEBUG=True
+ALLOWED_HOSTS=localhost,127.0.0.1
+
+# Database (Optional - SQLite used by default)
+DATABASE_URL=postgresql://username:password@localhost:5432/healthstack
+
+# Cache (Optional)
+REDIS_URL=redis://localhost:6379/0
+
+# SSLCommerz Payments
+SSLCOMMERZ_STORE_ID=your-store-id
+SSLCOMMERZ_STORE_PASSWORD=your-store-password
+SSLCOMMERZ_IS_SANDBOX=True
+
+# Email (Optional)
+EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USE_TLS=True
+EMAIL_HOST_USER=your-email@gmail.com
+EMAIL_HOST_PASSWORD=your-app-password
+```
+
+### Required Django Settings
+```python
+# settings.py key configurations
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    
+    # Third party apps
+    'rest_framework',
+    'rest_framework_simplejwt',
+    'drf_spectacular',
+    'channels',
+    
+    # Local apps
+    'hospital',
+    'doctor',
+    'pharmacy',
+    'ChatApp',
+    'ai',
+    'api',
+    'sslcommerz',
+]
+
+# REST Framework configuration
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
+# Channels configuration for WebSockets
+ASGI_APPLICATION = 'HealthStack.asgi.application'
+```
+
+## 📱 Usage
+
+### Access Points
+- **Web Application**: `http://127.0.0.1:8000/`
+- **Admin Interface**: `http://127.0.0.1:8000/admin/`
+- **API Documentation**: `http://127.0.0.1:8000/api-docs/`
+
+### Key Application Routes
+
+#### Patient Routes
+- `/login/` - Patient login
+- `/register/` - Patient registration
+- `/patient-dashboard/` - Patient dashboard
+- `/hospital/` - Hospital search and booking
+
+#### Doctor Routes
+- `/doctor-login/` - Doctor authentication
+- `/doctor-dashboard/` - Doctor portal
+- `/schedule-timings/` - Availability management
+- `/my-patients/` - Patient management
+
+#### Hospital Routes
+- `/hospital/` - Hospital homepage
+- `/hospital-dashboard/` - Admin dashboard
+- `/hospital-doctors/` - Doctor management
+- `/hospital-appointments/` - Appointment tracking
+
+#### Pharmacy Routes
+- `/pharmacy/shop/` - Medicine catalog
+- `/pharmacy/cart/` - Shopping cart
+- `/pharmacy/checkout/` - Order processing
+- `/pharmacy/orders/` - Order history
+
+#### Additional Features
+- `/chat-home/` - Real-time messaging
+- `/ai/symptom-checker/` - AI health assistant
+- `/sslcommerz/` - Payment processing
+
+## 🔌 API Documentation
+
+### Authentication
+```http
+POST /api/token/
+Content-Type: application/json
+
+{
+    "username": "your_username",
+    "password": "your_password"
+}
+```
+
+Response:
+```json
+{
+    "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9...",
+    "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9..."
+}
+```
+
+### Key API Endpoints
+- `GET /api/` - API root with available endpoints
+- `GET /api/hospitals/` - List all hospitals
+- `GET /api/hospital/<slug>/` - Hospital details
+- `GET /api/doctors/` - Doctor listings
+- `GET /api/appointments/` - Appointment management
+- `GET /api/medicines/` - Pharmacy products
+
+### API Documentation Access
+- **Swagger UI**: `/api-docs/`
+- **ReDoc**: `/api-redoc/`
+- **OpenAPI Schema**: `/api/schema/`
+
+## 📸 Screenshots
+
+### 🧑‍⚕️ About & Home Pages
+![About](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/About.png)
+![Home Page](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Home%20Page.png)
+
+### 🔐 Authentication Pages
+![Admin Login Page](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Admin%20Login%20Page.png)
+![Doctor Login Page](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Doctor%20Login%20Page.png)
+![Patient Login Page](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Patient%20Login%20Page.png)
+
+### 🧭 Dashboards
+![Admin Dashboard](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Admin%20Dashboard.png)
+![Doctor Dashboard](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Doctor%20Dashboard.png)
+![Patient Dashboard](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Patient%20Dashboard.png)
+
+### 🏥 Hospital & Clinical Management
+![Available Hospitals](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Available%20Hospitals.png)
+![Available Doctors](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Available%20Doctors.png)
+![Clinic And Specialist](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Clinic%20And%20Specialist.png)
+
+### 💊 Pharmacy & Billing
+![Medicines](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Medicines.png)
+![Medicine Cart](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Medicine%20Cart.png)
+![Medicine Payment](https://raw.githubusercontent.com/Skismail57/Health-Stack-System/main/HealthStack-System-main/static/Screenshots/Medicine%20Payment.png)
+
+## 🚀 Deployment
+
+### Production Considerations
+1. **Database**: Switch to PostgreSQL for production
+2. **Static Files**: Configure AWS S3 or similar service
+3. **Media Files**: Set up cloud storage
+4. **SSL**: Enable HTTPS with proper certificates
+5. **Web Server**: Use Nginx + Gunicorn/Uvicorn
+6. **Cache**: Implement Redis for better performance
+7. **Monitoring**: Set up logging and error tracking
+
+### Sample Production Settings
+```python
+# Production configurations
+DEBUG = False
+ALLOWED_HOSTS = ['yourdomain.com', 'www.yourdomain.com']
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'healthstack_prod',
+        'USER': 'healthstack_user',
+        'PASSWORD': 'secure_password',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+
+# Security settings
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+```
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+**Static files not loading:**
+```bash
+python manage.py collectstatic --noinput
+```
+
+**Database migration errors:**
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+**Port already in use:**
+```bash
+python manage.py runserver 127.0.0.1:8001
+```
+
+**Module import errors:**
+- Verify virtual environment is activated
+- Check all requirements are installed: `pip install -r requirements.txt`
+
+### Testing
+```bash
+# Run all tests
+python manage.py test
+
+# Run specific app tests
+python manage.py test hospital
+python manage.py test doctor
+python manage.py test api
+```
+
+## 🤝 Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit changes: `git commit -m 'Add amazing feature'`
+4. Push to branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
+
+### Development Guidelines
+- Follow PEP 8 coding standards
+- Write tests for new functionality
+- Update documentation for new features
+- Ensure all tests pass before submitting PR
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🔗 Links
+
+- **Documentation**: [Setup Guide](SETUP_GUIDE.md), [Deployment Guide](DEPLOYMENT.md)
+- **API**: Live documentation available at `/api-docs/`
+- **Issue Tracking**: GitHub Issues
+- **Releases**: GitHub Releases
+
+## 🏆 Acknowledgments
+
+- Django community for excellent documentation
+- Contributors and testers
+- Healthcare professionals who provided domain expertise
+
+---
+
+<div align="center">
+
+**HealthStack** - *Transforming Healthcare Management*
+
+For support, email: support@healthstack.com | [Documentation](https://docs.healthstack.com)
+
+</div>
