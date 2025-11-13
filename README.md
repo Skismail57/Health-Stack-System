@@ -138,109 +138,22 @@ SSLCOMMERZ_IS_SANDBOX=True
 
 <<!-- screenshots:auto:start -->
 
-<!-- screenshots:auto:start -->
 
-## 🖼️ Screenshots
 
-### 🔐 Authentication Pages  
-#### 👑 Admin Login Page  
-![Admin Login Page](static/screenshots/Admin%20Login%20Page.png)
 
-#### 👨‍⚕️ Doctor Login Page  
-![Doctor Login Page](static/screenshots/Doctor%20Login%20Page.png)
 
-#### 👩‍⚕️ Patient Login Page  
-![Patient Login Page](static/screenshots/Patient%20Login%20Page.png)
 
----
 
-### 🏠 Core Pages  
-#### 🏠 Home Page  
-![Home Page](static/screenshots/Home%20Page.png)
 
-#### ℹ️ About Page  
-![About](static/screenshots/About.png)
 
----
 
-### 🧑‍💼 Admin Panel  
-#### 🧾 Admin Dashboard  
-![Admin Dashboard](static/screenshots/Admin%20Dashboard.png)
 
-#### ➕ Add Clinical Technician  
-![Add Clinical Technician](static/screenshots/Add%20Clinical%20Technician.png)
 
-#### 🧑‍⚕️ Available Doctors  
-![Available Doctors](static/screenshots/Available%20Doctors.png)
 
-#### 🏥 Available Hospitals  
-![Available Hospitals](static/screenshots/Available%20Hospitals.png)
 
-#### 🧑‍🔬 Clinic & Specialist  
-![Clinic and Specialist](static/screenshots/Clinic%20And%20Specialist.png)
 
-#### 🚨 Emergency Hospitals  
-![Emergency Hospitals](static/screenshots/Emergency%20Hospitals.png)
 
----
 
-### 👨‍⚕️ Doctor Module  
-#### 🩺 Doctor Dashboard  
-![Doctor Dashboard](static/screenshots/Doctor%20Dashboard.png)
-
-#### 📅 Django Add Appointment  
-![Django Add Appointment](static/screenshots/Django%20Add%20Appointment.png)
-
-#### 🧾 Django Add Report  
-![Django Add Report](static/screenshots/Django%20Add%20Report.png)
-
-#### 💊 Django Add Prescription  
-![Django Add Prescription](static/screenshots/Django%20Add%20Prescription.png)
-
-#### 🛒 Django Add Cart  
-![Django Add Cart](static/screenshots/Django%20Add%20Cart.png)
-
----
-
-### 👩‍⚕️ Patient Module  
-#### 🧍‍♂️ Patient Dashboard  
-![Patient Dashboard](static/screenshots/Patient%20Dashboard.png)
-
-#### 🧾 Django Appointments  
-![Django Appointments](static/screenshots/Django%20Appointments.png)
-
-#### 💉 Medicines  
-![Medicines](static/screenshots/Medicines.png)
-
-#### 💊 Medicine Cart  
-![Medicine Cart](static/screenshots/Medicine%20Cart.png)
-
-#### 💳 Medicine Payment  
-![Medicine Payment](static/screenshots/Medicine%20Payment.png)
-
----
-
-### ⚙️ Django Administration & Backend  
-#### 🏗️ Django Administration  
-![Django Administration](static/screenshots/Django%20Administration.png)
-
-#### ⚙️ Site Administration  
-![Site Administration](static/screenshots/Site%20Administration.png)
-
-#### 🧠 Django Doctor  
-![Django Doctor](static/screenshots/Django%20Doctor.png)
-
-#### 🏥 Django Hospital  
-![Django Hospital](static/screenshots/Django%20Hospital.png)
-
-#### 🩺 Django Add Report  
-![Django Add Report](static/screenshots/Django%20Add%20Report.png)
-
----
-
-### 🌐 API Documentation  
-#### 🔗 HealthStack API  
-![HealthStack Api](static/screenshots/HealthStack%20Api.png)
 
 <!-- screenshots:auto:end -->
 
