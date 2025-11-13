@@ -78,68 +78,59 @@ HealthStack is a comprehensive, modular Django-powered healthcare platform that 
 - PDF generation for reports/prescriptions (xhtml2pdf)
 
  HealthStack-System/
-├── 📂 hospital/                    # Hospital management app
-│   ├── models.py                  # Hospital, Department, Appointment models
-│   ├── views.py                   # Hospital views and dashboards
-│   ├── urls.py                    # Hospital routing
-│   └── templates/hospital/        # Hospital templates
+├── hospital/ # Hospital management app
+│ ├── models.py # Hospital, Department, Appointment models
+│ ├── views.py # Hospital views and dashboards
+│ ├── urls.py # Hospital routing
+│ └── templates/hospital/ # Hospital templates
 │
-
-├── 📂 doctor/                     # Doctor portal app
-│   ├── models.py                  # Doctor, Schedule, Prescription models
-│   ├── views.py                   # Doctor authentication and dashboards
-│   ├── urls.py                    # Doctor routing
-│   └── templates/doctor/          # Doctor templates
+├── doctor/ # Doctor portal app
+│ ├── models.py # Doctor, Schedule, Prescription models
+│ ├── views.py # Doctor authentication and dashboards
+│ ├── urls.py # Doctor routing
+│ └── templates/doctor/ # Doctor templates
 │
-
-├── 📂 pharmacy/                   # E-pharmacy app
-│   ├── models.py                  # Medicine, Cart, Order models
-│   ├── views.py                   # Shop, cart, checkout views
-│   ├── urls.py                    # Pharmacy routing
-│   └── templates/pharmacy/        # Pharmacy templates
+├── pharmacy/ # E-pharmacy app
+│ ├── models.py # Medicine, Cart, Order models
+│ ├── views.py # Shop, cart, checkout views
+│ ├── urls.py # Pharmacy routing
+│ └── templates/pharmacy/ # Pharmacy templates
 │
-
-├── 📂 ChatApp/                    # Real-time messaging
-│   ├── consumers.py               # WebSocket consumers
-│   ├── routing.py                 # WebSocket routing
-│   └── templates/ChatApp/         # Chat interfaces
+├── ChatApp/ # Real-time messaging
+│ ├── consumers.py # WebSocket consumers
+│ ├── routing.py # WebSocket routing
+│ └── templates/ChatApp/ # Chat interfaces
 │
-
-├── 📂 ai/                         # AI services
-│   ├── views.py                   # Symptom checker views
-│   └── templates/ai/              # AI interface templates
+├── ai/ # AI services
+│ ├── views.py # Symptom checker views
+│ └── templates/ai/ # AI interface templates
 │
-
-├── 📂 api/                        # REST API layer
-│   ├── views.py                   # API view sets
-│   ├── serializers.py             # Data serializers
-│   ├── urls.py                    # API endpoints
-│   └── permissions.py             # Custom permissions
+├── api/ # REST API layer
+│ ├── views.py # API view sets
+│ ├── serializers.py # Data serializers
+│ ├── urls.py # API endpoints
+│ └── permissions.py # Custom permissions
 │
-
-├── 📂 sslcommerz/                 # Payment integration
-│   ├── views.py                   # Payment processing
-│   └── templates/sslcommerz/      # Payment templates
+├── sslcommerz/ # Payment integration
+│ ├── views.py # Payment processing
+│ └── templates/sslcommerz/ # Payment templates
 │
-
-├── 📂 static/                     # Static assets
-│   ├── css/                       # Stylesheets
-│   ├── js/                        # JavaScript files
-│   ├── images/                    # Images and icons
-│   └── screenshots/               # Application screenshots
+├── static/ # Static assets
+│ ├── css/ # Stylesheets
+│ ├── js/ # JavaScript files
+│ ├── images/ # Images and icons
+│ └── screenshots/ # Application screenshots
 │
-
-├── 📂 templates/                  # Base templates
-│   ├── base.html                  # Main template
-│   ├── includes/                  # Template partials
-│   └── registration/              # Auth templates
+├── templates/ # Base templates
+│ ├── base.html # Main template
+│ ├── includes/ # Template partials
+│ └── registration/ # Auth templates
 │
-
-├── 📂 media/                      # User uploaded files
-├── 📜 manage.py                   # Django management
-├── 📜 requirements.txt            # Python dependencies
-├── 📜 .env.example                # Environment template
-└── 📜 README.md                   # This file
+├── media/ # User uploaded files
+├── manage.py # Django management
+├── requirements.txt # Python dependencies
+├── .env.example # Environment template
+└── README.md # This file
 
 ## Advantages
 - End‑to‑end digital healthcare workflow in one platform
